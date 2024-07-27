@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kegiatan Posyandu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        header {
+            background: #50b3a2;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #3d867e 3px solid;
+        }
+        header h1 {
+            text-align: center;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        nav li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        .showcase {
+            min-height: 300px;
+            background: url('posyandu-banner.jpg') no-repeat center center/cover;
+            text-align: center;
+            color: #fff;
+        }
+        .showcase h1 {
+            margin-top: 100px;
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        .showcase p {
+            font-size: 20px;
+        }
+        section {
+            padding: 20px 0;
+            border-bottom: #e0e0e0 1px solid;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+        .schedule, .contact-form {
+            margin: 20px 0;
+        }
+        .schedule table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .schedule table, th, td {
+            border: 1px solid #ddd;
+        }
+        .schedule th, .schedule td {
+            padding: 10px;
+            text-align: left;
+        }
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #fff;
+            background-color: #3d867e;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Kegiatan Posyandu</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about"onclick="showSection('home')">Tentang Posyandu</a></li>
+                    <li><a href="#schedule"onclick="showSection('home')">Jadwal Kegiatan</a></li>
+                    <li><a href="#contact"onclick="showSection('home')">Kontak Saran</a></li>
+                    <li><a href="register.html"onclick="showSection('home')">Registrasi</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="showcase">
+        <div class="container">
+            <h1>Selamat Datang di Posyandu</h1>
+            <p>Bersama kita menjaga kesehatan ibu dan anak</p>
+        </div>
+    </div>
+    <section id="about" class="container">
+        <h2 class="section-title">Tentang Posyandu</h2>
+        <p>Posyandu (Pos Pelayanan Terpadu) adalah kegiatan pelayanan kesehatan dasar yang diselenggarakan dari, oleh, dan untuk masyarakat yang dibantu oleh petugas kesehatan. Kegiatan Posyandu meliputi pemantauan tumbuh kembang anak, imunisasi, penyuluhan gizi, dan pelayanan kesehatan ibu hamil.</p>
+    </section>
+    <section id="schedule" class="container">
+        <h2 class="section-title">Jadwal Kegiatan</h2>
+        <div class="schedule">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tanggal</th>
+                        <th>Kegiatan</th>
+                        <th>Waktu</th>
+                        <th>Tempat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1 Agustus 2024</td>
+                        <td>Imunisasi Balita</td>
+                        <td>09:00 - 11:00</td>
+                        <td>Balai Desa</td>
+                    </tr>
+                    <tr>
+                        <td>8 Agustus 2024</td>
+                        <td>Penyuluhan Gizi</td>
+                        <td>10:00 - 12:00</td>
+                        <td>Balai Desa</td>
+                    </tr>
+                    <tr>
+                        <td>15 Agustus 2024</td>
+                        <td>Pelayanan Kesehatan Ibu Hamil</td>
+                        <td>09:00 - 11:00</td>
+                        <td>Balai Desa</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="contact" class="container">
+        <h2 class="section-title">Kontak Saran</h2>
+        <div class="contact-form">
+            <form action="mailto:example@example.com" method="post" enctype="text/plain">
+                <label for="name">Nama:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="message">Pesan:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                <input type="submit" value="Kirim">
+            </form>
+                <a href="posyandu1.html"><input type="submit" value="kembali"></a>
+        </div>
+    </section>
+    <footer>
+        <p>Kegiatan Posyandu &copy; 2024</p>
+    </footer>
+</body>
+</html>
